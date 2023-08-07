@@ -9,6 +9,10 @@ class Feedback(models.Model):
     email=models.EmailField(default='abc')
     text=models.CharField(max_length=700,default='enter text')
 
+    def __str__(self):
+        return self.name
+    
+
 
 # class Feedback(models.Model):
 #     name=models.CharField(max_length=200,required = True)
